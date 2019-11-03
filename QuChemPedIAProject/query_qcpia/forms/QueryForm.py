@@ -10,7 +10,7 @@ class QueryForm(forms.Form):
                ('IUPAC', 'IUPAC name'),
                ('CID', 'CID PubChem'),
                ('SMILES', 'SMILES'),
-               ('id_log', 'id_log'),
+               # ('id_log', 'id_log'),
                # ('homo_alpha_energy', 'homo_alpha_energy'),
                # ('homo_beta_energy', 'homo_beta_energy'),
                # ('lumo_alpha_energy', 'lumo_alpha_energy'),
