@@ -1,0 +1,8 @@
+JSON
+
+Insérer les fichiers freq,td,opt avant tous les tests (cela représente le cas 1) et les garder pour la suite
+
+Les cas 10,12,14 doivent être émis par le même auteur
+Les cas 11,13,15 ne doivent pas être émis par le même auteur
+
+Les cas 16,17,18 sont juste des insertions des fichiers freq,td,opt.

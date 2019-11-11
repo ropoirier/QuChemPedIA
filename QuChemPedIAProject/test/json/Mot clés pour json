@@ -1,0 +1,12 @@
+Conformère -> "formula" + "nuclear_repulsion_energy_from_xyz" (si les deux sont identiques alors même conformère)
+JT -> "job_type"
+TME -> "total_molecular_energy"
+solveur -> "package" (et non pas package_version)
+Freq -> dans job_type
+température -> "temperature"
+anharmonie -> "anharmonicity"
+TD -> dans job_type
+ES -> "excited_states" (dans comp_details)
+symétrie -> "et_sym"
+auteur -> hit.data.metadata.id_user (je ne sais pas trop comment varier cet id et comment il fonctionne)
+discretizable -> "discretizable" (à la toute fin)
