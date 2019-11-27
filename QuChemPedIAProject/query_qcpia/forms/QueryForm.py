@@ -8,7 +8,7 @@ class QueryForm(forms.Form):
     CHOICES = (('Formula', 'Formula'),
                ('InChi', 'InChi'),
                ('IUPAC', 'IUPAC name'),
-               ('CID', 'CID PubChem'),
+               #('CID', 'CID PubChem'),
                ('SMILES', 'SMILES'),
                # ('id_log', 'id_log'),
                # ('homo_alpha_energy', 'homo_alpha_energy'),
