@@ -121,7 +121,7 @@
                         Si la théorie est DFT on affiche seulement la fonction sinon on affiche la théorie/fonction
                         On ajoute Le Basis set name (et sa valeur)
                      -->
-                      <span class="text-muted">Series: </span>{% if value.0.theory == "DFT" %}{{ value.0.functionnal }}{% else %}{{ value.0.theory }}/{{ value.0.functionnal }}{% endif %}
+                      <span class="text-muted">theories: </span>{% if value.0.theory == "DFT" %}{{ value.0.functionnal }}{% else %}{{ value.0.theory }}/{{ value.0.functionnal }}{% endif %}
                     </div>
                   </div>
                   <div class="container row">
@@ -162,7 +162,7 @@
         <div class="row row404">
           {% load static %}
           <div class="col-xs-4 "><img src="{% static "media/confused_scientist.png" %}" style="height:300px;"></div>
-          <div class="col-xs-4"><img src="{% static "media/molecule2.png" %}" style="height:300px;"></div>
+          <div class="col-xs-4"><img src="{% static "media/molecule3.png" %}" style="height:300px;"></div>
         </div>
       </div>
   {% endif %}
