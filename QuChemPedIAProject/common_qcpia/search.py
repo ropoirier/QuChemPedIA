@@ -186,7 +186,7 @@ def search_formula(formula_value, page, nbrpp):
           )
     s = Search().using(es).query(q)[nbrpp*page-nbrpp:(nbrpp*page)-1]
     nb = s.count()
-    res =s.execute()
+    res = s.execute()
     return _search_to_json(res, nb)
 
 
