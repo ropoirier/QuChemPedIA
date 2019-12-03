@@ -1,0 +1,12 @@
+Pour commit ses changements :
+
+1- git status --Pour voir tous les fichiers à add
+
+2- git add [fichier] --Refaire le git status pour voir s'ils sont passé en vert
+
+3- git commit -m "[message du commit]"
+
+4- git push origin 07_test_import
+
+username : thomasperichet
+password : même que sur lol
