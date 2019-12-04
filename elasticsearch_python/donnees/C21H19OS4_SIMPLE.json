@@ -1,0 +1,9 @@
+{
+	"formula": "C21H19OS4++",
+	"inChi": "1S/C21H19OS4/c1-11-13(3)25-20(15-7-5-9-23-15)17(11)19(22)18-12(2)14(4)26-21(18)16-8-6-10-24-16/h5-10,22H,1-4H3",
+	"id_user": 2,
+  "siblings": [
+					     {"id_log":"1t0j_moBaHZQCbKm6dnI","job":"OPT"},
+					     {"id_log":"190j_moBaHZQCbKm89lG","job":"TD"}
+				      ]
+}
