@@ -104,6 +104,6 @@ def recherche_partielle_pertinent(mol_recherche,limite_resultat):
 	for molecule in liste_mol_final:
 		print("\t"+molecule)
 
-recherche_partielle("c21hs4",10,1)
+recherche_partielle("s4h19",10,1)
 #recherche_partielle_pertinent("c3s4",10)
 #decomposer_molecule("c3s4")
