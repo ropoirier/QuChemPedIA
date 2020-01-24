@@ -9,14 +9,12 @@ cypress.env.json
 venv
 
 # Ne pas ajouter le cache Python __pycache__
-mopga/__pycache__/
+*/__pycache__/
 
 ### Django ###
 *.log
 *.pot
 *.pyc
-main/__pycache__/
-users/__pycache__/
 __pycache__/
 local_settings.py
 db.sqlite3
