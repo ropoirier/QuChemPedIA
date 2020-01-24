@@ -22,12 +22,13 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 urlpatterns = [
     path('admin/', include('admin_qcpia.urls_admin_qcpia')),
     path('', include('common_qcpia.urls_common_qcpia')),
     path('accueil/', include('common_qcpia.urls_common_qcpia')),
     path('access/', include('query_qcpia.urls_query_qcpia')),
-    path('import/',include('import_qcpia.urls_import_qcpia')),
-    path('user/',include('user_qcpia.urls_user_qcpia')),
+    path('import/', include('import_qcpia.urls_import_qcpia')),
+    path('user/', include('user_qcpia.urls_user_qcpia')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)+static(settings.DATA_DIR_URL, document_root=settings.DATA_DIR_ROOT)

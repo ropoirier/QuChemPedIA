@@ -1,9 +1,9 @@
+<!DOCTYPE html>
 {% load static %}
 {% load render_bundle from webpack_loader %}
 
 {# block used as header #}
 {% block header %}
-<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -68,7 +68,7 @@
 </footer>
 
 {% render_bundle 'main' %}
-<script src="{% static "js/dropzone.js" %}"></script>
+<script src="{% static 'js/dropzone.js' %}"></script>
 
 <script>
 /* Script de rendu pour le formulaire de recherche */
@@ -112,5 +112,5 @@
         }
         });
     </script>
-
+</html>
 {% endblock %}

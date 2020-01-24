@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'import_qcpia',
     'user_qcpia',
     'query_qcpia',
+
+    #CLEAR-CACHE
+    'clear_cache',
 ]
 
 MIDDLEWARE = [
@@ -136,7 +139,9 @@ SITE_URL = 'http://127.0.0.1'
 SITE_PORT = '8000'
 SITE_ROOT_URL= "http://127.0.0.1:8000"
 
+
 ELASTICSEARCH = {"host": "localhost", "port": 9200}
+
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'assets'),

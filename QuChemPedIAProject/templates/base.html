@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 {% load static %}
 {% load render_bundle from webpack_loader %}
 <!-- Page de base pour tout le site sauf la page d'accueil
@@ -5,14 +6,13 @@
    -->
 {# block used as header #}
 {% block header %}
-<!DOCTYPE html>
 <html lang="fr">
 <head>
   <title>QuChemPedIA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     {% render_bundle 'main' %}
-    <link rel="stylesheet" type="text/css" href="{% static "css/general.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/general.css' %}">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
     <script src="{% static "js/jsPDF/jspdf.js" %}"></script>
     <script src="{% static "js/jsPDF/dist/jspdf.min.js" %}"></script>
