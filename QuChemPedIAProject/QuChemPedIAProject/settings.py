@@ -71,7 +71,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.context_processors.media'
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -127,6 +127,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
+
 STATIC_URL = '/common_qcpia/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'common_qcpia/static')
 
@@ -135,9 +136,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'common_qcpia/media')
 
 DATA_DIR_URL = '/common_qcpia/data_dir/'
 DATA_DIR_ROOT = os.path.join(BASE_DIR, 'common_qcpia/data_dir')
-SITE_URL = 'http://127.0.0.1'
+
+
+DIR_TEST_NAME = ''
+SITE_URL = 'http://127.0.0.1/'+DIR_TEST_NAME
 SITE_PORT = '8000'
-SITE_ROOT_URL= "http://127.0.0.1:8000"
+SITE_ROOT_URL = 'http://127.0.0.1:8000/'+DIR_TEST_NAME
 
 
 ELASTICSEARCH = {"host": "localhost", "port": 9200}
