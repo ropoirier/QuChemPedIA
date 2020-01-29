@@ -137,11 +137,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'common_qcpia/media')
 DATA_DIR_URL = '/common_qcpia/data_dir/'
 DATA_DIR_ROOT = os.path.join(BASE_DIR, 'common_qcpia/data_dir')
 
-
-DIR_TEST_NAME = ''
-SITE_URL = 'http://127.0.0.1/'+DIR_TEST_NAME
+# MODE = 'testing/'
+MODE = 'testing/'
+SITE_URL = 'http://127.0.0.1/'+MODE
 SITE_PORT = '8000'
-SITE_ROOT_URL = 'http://127.0.0.1:8000/'+DIR_TEST_NAME
+SITE_ROOT_URL = 'http://127.0.0.1:8000/'+MODE
 
 
 ELASTICSEARCH = {"host": "localhost", "port": 9200}
