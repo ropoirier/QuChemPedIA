@@ -4,7 +4,6 @@
       class="text-muted font-italic text-right w-100"
       style="font-size: 0.75rem"
     >
-      Molecule Id : {{ moleculeId }}
     </div>
 
     <template v-if="cardsDisplay">

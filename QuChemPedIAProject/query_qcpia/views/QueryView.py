@@ -51,7 +51,7 @@ def query(request):
             results = search_id_user(id_user=request.GET.get('search'), nbrpp=nbrpp, page=page)
 
     except Exception as error:
-        print("error :")
+        print("error coucou :")
         print(error)
 
     # if we have only one result we display the details of the molecule

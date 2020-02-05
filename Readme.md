@@ -11,7 +11,7 @@
 ### installation de virtualenv with python3
 	cd /location
 	virtualenv -p python3 nameOfEnv
-	source /path/to/the/directory/of/env
+	source nameOfEnv/bin/activate
 
 ### installation de django
 	pip install django

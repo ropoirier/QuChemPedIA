@@ -23,7 +23,7 @@
         </div>
         <div class="col">
           <div class="text-muted">
-            Series
+            Theories
           </div>
           <div>{{ sibling.functionnal }}</div>
         </div>
