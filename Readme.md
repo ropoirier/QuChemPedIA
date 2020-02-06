@@ -1,21 +1,34 @@
 
-# Mise en place de l'environement
+# Mise en place de l'environnement
+
+## Prérequis
+
+* Version **2.2.7** de Vagrant
+* Le plugin vagrant-vbguest :
+  ```
+  vagrant plugin install vagrant-vbguest
+  ```
+* Version **6.0** de VirtualBox
+* L'extension *Oracle VM VirtualBox Extension Pack* pour VirtualBox
 
 ## Installation avec vagrant
 
 ### Mise en place de la VM vagrant
+Création et configuration de la VM :
 ```
 vagrant up
 ```
 Cette commande va échouer car les *VirtualBox Guest Additions* ne sont pas installées et il est donc impossible de monter les shared folders et de terminer le provisionning
+
+Cette commande va installer toutes les dépendances nécessaires :
 ```
 vagrant provision
 ```
-Cette commande va installer toutes les dépendances nécessaires
+
+Enfin, cette commande va relancer la VM pour installer les *VirtualBox Guest Additions* et va terminer le provisionning (installation des requirements, yarn) qui n'était pas possible :
 ```
 vagrant reload --provision
 ```
-Enfin, cette commande va relancer la VM pour installer les *VirtualBox Guest Additions* et va terminer le provisionning (installation des requirements, yarn) qui n'était pas possible
 
 ### Configuration de la base de données
 Comme il n'est pas possible d'intégrer facilement cette partie au Vagrantfile, il faut exécuter les commandes suivantes à la main :
