@@ -23,7 +23,7 @@ SECRET_KEY = '*3+0hjxjrtv0-^2c+kx*+-hgxn^ht$$$#r63*toyk(fdmc)_i7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

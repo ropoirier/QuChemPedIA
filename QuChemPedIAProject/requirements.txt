@@ -3,8 +3,7 @@ Babel==2.6.0
 cclib==1.6.1
 certifi==2018.4.16
 chardet==3.0.4
-Django==2.0.5
-django-bootstrap4==0.0.6
+django-bootstrap4==1.1.1
 django-webpack-loader==0.6.0
 docutils==0.14
 elasticsearch==7.0.1
@@ -17,9 +16,7 @@ MarkupSafe==1.0
 numpy==1.15.1
 openbabel==2.4.1
 packaging==17.1
-Pillow==7.0.0
-pkg-resources==0.0.0
-psycopg2-binary==2.7.4
+Pillow
 Pygments==2.2.0
 pyparsing==2.2.0
 python-dateutil==2.7.3
