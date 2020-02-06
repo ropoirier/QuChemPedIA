@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'query_qcpia',
 
     #CLEAR-CACHE
-    'clear_cache',
+    #'clear_cache',
 ]
 
 MIDDLEWARE = [
