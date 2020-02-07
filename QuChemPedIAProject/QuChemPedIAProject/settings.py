@@ -23,7 +23,7 @@ SECRET_KEY = '*3+0hjxjrtv0-^2c+kx*+-hgxn^ht$$$#r63*toyk(fdmc)_i7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'import_qcpia',
     'user_qcpia',
     'query_qcpia',
+
+    #CLEAR-CACHE
+    #'clear_cache',
 ]
 
 MIDDLEWARE = [
@@ -68,7 +71,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.context_processors.media'
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -124,6 +127,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
+
 STATIC_URL = '/common_qcpia/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'common_qcpia/static')
 
@@ -132,11 +136,16 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'common_qcpia/media')
 
 DATA_DIR_URL = '/common_qcpia/data_dir/'
 DATA_DIR_ROOT = os.path.join(BASE_DIR, 'common_qcpia/data_dir')
-SITE_URL = 'http://127.0.0.1'
+
+# MODE = 'testing/'
+MODE = 'testing/'
+SITE_URL = 'http://127.0.0.1/'+MODE
 SITE_PORT = '8000'
-SITE_ROOT_URL= "http://127.0.0.1:8000"
+SITE_ROOT_URL = 'http://127.0.0.1:8000/'+MODE
+
 
 ELASTICSEARCH = {"host": "localhost", "port": 9200}
+
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'assets'),

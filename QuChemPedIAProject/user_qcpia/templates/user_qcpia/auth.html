@@ -3,7 +3,7 @@
     <div class="container vertical-center" >
             <div class="row" id="content_sign_in_up">
                 <div class="col col-lg-6" id="form_sign_in">
-                    <form method="POST" action={% url 'auth' %}>
+                    <form method="POST" action="{% url 'auth' %}">
                         <h4 >Sign In</h4>
                         {% if error_login %}
                             <p><strong>Utilisateur inconnu ou mauvais de mot de passe.</strong></p>
@@ -28,7 +28,7 @@
                     </form>
                 </div>
             <div class="col col-lg-6">
-                <form method="POST" action={% url 'auth' %}>
+                <form method="POST" action="{% url 'auth' %}">
                     <h4>Sign Up</h4>
                     {% if user.is_authenticated %}
                         Vous êtes connecté, {{ user.username }} !

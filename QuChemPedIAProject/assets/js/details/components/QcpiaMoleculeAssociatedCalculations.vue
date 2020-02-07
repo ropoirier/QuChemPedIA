@@ -103,16 +103,16 @@ export default {
     siblingsTableItems () {
       return this.siblings.map((sibling) => {
         return {
-          jobTypes: sibling.job ? sibling.job.join(', ') : 'Unknown',
+          jobTypes: sibling.job ? sibling.job.join(', ') : ' ',
           authorName: sibling.author ? sibling.author.name : 'N/A',
           fileId: sibling.id_log,
-          basisSetName: sibling.basis_set_name ? (sibling.basis_set_name === 'Null' ? 'Unknown' : sibling.basis_set_name) : 'Unknown',
-          'charge': sibling.charge !== null && sibling.charge !== undefined ? sibling.charge : 'Unknown',
-          'endingEnergy': sibling.ending_energy || 'Unknown',
-          'solvent': sibling.solvent || 'Unknown',
-          'functionnal': sibling.functional || 'Unknown',
-          'multiplicity': sibling.multiplicity || 'Unknown',
-          'software': sibling.software || 'Unknown'
+          basisSetName: sibling.basis_set_name ? (sibling.basis_set_name === 'Null' ? ' ' : sibling.basis_set_name) : ' ',
+          'charge': sibling.charge !== null && sibling.charge !== undefined ? sibling.charge : ' ',
+          'endingEnergy': sibling.ending_energy || ' ',
+          'solvent': sibling.solvent || ' ',
+          'functionnal': sibling.functional || ' ',
+          'multiplicity': sibling.multiplicity || ' ',
+          'software': sibling.software || ' '
         }
       })
     },

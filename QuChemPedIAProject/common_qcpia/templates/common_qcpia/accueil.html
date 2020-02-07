@@ -1,26 +1,26 @@
+<!DOCTYPE html>
 {% load static %}
 {% load render_bundle from webpack_loader %}
 
 {# block used as header #}
 {% block header %}
-<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width"/>
     <title>QuChemPedIA</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
 </head>
 {% endblock %}
 {% block nav %}
-<div  id="sign" class="row float-right">
+<div id="sign" class="row float-right">
     {% if not user.is_authenticated %}
     <a title="Sign up/Sign in" href="{% url 'auth' %}" class="log">
         Sign In
-    </a><span class="fas fa-sign-in-alt iconLog" ></span>
+    </a><span class="fas fa-sign-in-alt iconLog"></span>
     {% else %}
-    <a  href="{% url 'dashboard/import' %}" class="log">
+    <a href="{% url 'dashboard/import' %}" class="log">
         Import
     </a><span class="fas fa-file-import iconLog"></span>
     <a href="{% url 'dasboard/account' %}" class="log">
@@ -43,11 +43,12 @@
             <br/>
             <div class="row justify-content-center">
                 <!-- Formulaire de recherche -->
-                <form class="col-8 justify-content-between" action="{% url 'query' %}" method="GET" >
+                <form class="col-8 justify-content-between" action="{% url 'query' %}" method="GET">
                     <div class="row">
-                    {% csrf_token %}
-                    {{ query_form.as_table }}
-                    <button class="mt-1 mb-1 mt-lg-0 btn btn-info default-primary-color col-12 col-lg-2" type="submit">Search <i class="fa fa-search"></i></button>
+                        {% csrf_token %}
+                        {{ query_form.as_table }}
+                        <button class="mt-1 mb-1 mt-lg-0 btn btn-info default-primary-color col-12 col-lg-2"
+                                type="submit">Search <i class="fa fa-search"></i></button>
 
                     </div>
                 </form>
@@ -68,7 +69,7 @@
 </footer>
 
 {% render_bundle 'main' %}
-<script src="{% static "js/dropzone.js" %}"></script>
+<script src="{% static 'js/dropzone.js' %}"></script>
 
 <script>
 /* Script de rendu pour le formulaire de recherche */
@@ -76,6 +77,7 @@
       $("#id_search").attr("placeholder","Search...");
       $("#id_typeQuery").css("width","15%");
   });
+
 </script>
 <script>
 
@@ -111,6 +113,7 @@
             this.removeFile(file); //todo discuter de quoi faire
         }
         });
-    </script>
 
+</script>
+</html>
 {% endblock %}

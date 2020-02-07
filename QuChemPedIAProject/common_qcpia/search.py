@@ -185,7 +185,9 @@ def search_formula(formula_value, page, nbrpp):
           should=[Q('match', data__molecule__formula=formula_value)],
           )
     s = Search().using(es).query(q)[nbrpp*page-nbrpp:(nbrpp*page)-1]
-    return _search_to_json(search=s.execute(), nbresult=s.count())
+    nb = s.count()
+    res = s.execute()
+    return _search_to_json(res, nb)
 
 
 def search_smiles(smiles_value, page, nbrpp):
