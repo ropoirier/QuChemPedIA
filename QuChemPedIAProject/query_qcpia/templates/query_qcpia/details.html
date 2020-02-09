@@ -11,12 +11,9 @@
 {% block footer %}
 
 {{ block.super }}
-{#
-  <script src="{% static 'js/details.js' %}"></script>
-#}
-{#
-  <script type="text/javascript" src="{% static 'js/jsmol/js/JSmol.full.nojq.js' %}"></script>
-#}
+
+{# <script src="{% static 'js/details.js' %}"></script> #}
+{# <script type="text/javascript" src="{% static 'js/jsmol/js/JSmol.full.nojq.js' %}"></script> #}
 
 {% render_bundle 'details' %}
 {% endblock %}

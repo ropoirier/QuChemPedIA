@@ -57,6 +57,45 @@ python3 manage.py runserver 0:8000
 ```
 Le site est alors accessible à l'adresse **192.168.33.10:8000** directement depuis votre poste
 
+## Configuration D'ElasticSearch
+### Extraction des tar.gz
+Pour lancer ElasticSearch il faut d'abord décompresser les dossiers :
+```
+tar xvf data_elasticsearch.tar.gz
+tar xvf elasticsearch-6.3.2.tar.gz
+```
+### Installation de java sur la machine
+```
+sudo apt install default-jre
+sudo apt install default-jdk
+```
+
+### Vérifier que java est bien installer
+```
+javac -version
+```
+
+### Installer le plugin nécessaire au fonctionnement de d'ElasticSearch
+```
+/src/QuChemPedIAProject/elasticsearch-6.3.2/bin/elasticsearch-plugin install ingest-geoip
+```
+
+### Mettre le dump dans /opt/
+```
+sudo mv -R /src/QuChemPedIAProject/data_elasticsearch/ /opt/
+```
+
+### Pour que elasticSearch ait accès aux dossier on lui modifie les droits
+```
+sudo chmod -R 777 /opt/data_elasticsearch/
+```
+
+### Lancer ElasticSearch
+Pour lancer elasticSearch lancer dans un autre terminal la commande
+```
+/src/QuChemPedIAProject/elasticsearch-6.3.2/bin/elasticsearch
+```
+
 ## Installation avec VirtualEnv (ancienne méthode)
 
 ### pour commencer mettons à jour notre système :
@@ -87,6 +126,9 @@ Le site est alors accessible à l'adresse **192.168.33.10:8000** directement dep
 
 ### Read the doc here :
 	https://virtualenv.pypa.io/en/stable/userguide/
+	
+### Package important pour openbabel
+	sudo apt-get -y install pkg-config
 
 ### installation des d'open babel
 	apt-get install openbabel libopenbabel-dev swig

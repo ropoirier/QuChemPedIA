@@ -138,7 +138,7 @@ DATA_DIR_URL = '/common_qcpia/data_dir/'
 DATA_DIR_ROOT = os.path.join(BASE_DIR, 'common_qcpia/data_dir')
 
 # MODE = 'testing/'
-MODE = 'testing/'
+MODE = ''
 SITE_URL = 'http://127.0.0.1/'+MODE
 SITE_PORT = '8000'
 SITE_ROOT_URL = 'http://127.0.0.1:8000/'+MODE
